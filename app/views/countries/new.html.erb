@@ -1,0 +1,13 @@
+<h1>Countries#new</h1>
+<p>Find me in app/views/countries/new.html.erb</p>
+
+<%= link_to '<- Back to countries', countries_path %><br />
+<%= form_with scope: :country, url: countries_path, local: true do |form| %>
+  <p>
+    <%= form.label :name %><br />
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

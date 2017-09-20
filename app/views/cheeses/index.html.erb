@@ -1,0 +1,10 @@
+<h1>Cheeses#index</h1>
+<p>Find me in app/views/cheeses/index.html.erb</p>
+
+<%= link_to '<- Back to countries', countries_path %><br />
+<h2><%= @country.name + "'s" %> Cheeses</h2>
+<%= image_tag 'cheese.jpg', class: 'cheese' %><br />
+<%= link_to 'Add new cheese', new_country_cheese_path(@country) %><br /><br />
+<% @cheeses.each do |cheese| %>
+  <h3><%= cheese.name %></h3>
+<% end %>

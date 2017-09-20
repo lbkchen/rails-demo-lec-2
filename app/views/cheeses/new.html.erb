@@ -1,0 +1,13 @@
+<h1>Cheeses#new</h1>
+<p>Find me in app/views/cheeses/new.html.erb</p>
+
+<%= link_to '<- Back to cheeses', country_cheeses_path(@country) %><br />
+<%= form_with scope: :cheese, url: country_cheeses_path(@country), local: true do |form| %>
+  <p>
+    <%= form.label :name %><br />
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
