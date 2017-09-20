@@ -13,6 +13,9 @@ Demo showcasing countries and their cheeses.
 * Remove the routes that are not going to be implemented using `only`
 * Show `rails routes` again
 * Views are already populated, just show the linked file
+* Implement `index` and use explicit render
+* Remove explicit render and show that it automatically links to view
+* Then do `new` and `create`
 
 ## Adding a Second Model
 * Generate a controller for Cheese with index, new, create
@@ -22,5 +25,6 @@ Demo showcasing countries and their cheeses.
 * Show `rails routes` again
 * Use `only` to limit routes to index, new, create
 * Show `rails routes` again
+* Add link in `index` to link to cheese index
 * Write index method of `CheesesController`, point out in `rails routes` that it requires an argument `:country_id`
 * Finish off writing new and create of the `CheesesController`
